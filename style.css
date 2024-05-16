@@ -34,6 +34,19 @@ img {
 
 /* ============= 头部================== */
 
+.nav{
+	height: 40px;
+	background-color: #2e2e2e;
+	
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	
+	box-shadow: 0px 1px 2px #777;
+}
+
+
 /* 头部 */
 header {
   width: 100vw;
@@ -66,6 +79,7 @@ header nav {
 
 /* 导航链接 */
 header nav a {
+	position: relative;
   color: var(--text-color-lightest);
   text-decoration: none;
   margin: 0 24px;
@@ -75,6 +89,32 @@ header nav a {
 header nav i {
   color: var(--text-color-lightest);
 }
+
+nav a + .droplist {
+  width: 100%; /* 让下拉菜单宽度与父元素的宽度相同 */
+}
+
+/* 鼠标悬停时显示下拉列表 */
+nav a:hover .droplist {
+  display: block; /* 显示下拉列表 */
+}
+
+/* 将下拉菜单定位到<a>元素的正下方 */
+nav a {
+  position: relative; /* 设置相对定位 */
+}
+
+.droplist {
+  display: none; /* 默认隐藏下拉列表 */
+  position: absolute; /* 绝对定位 */
+  top: calc(100% + 5px); /* 上边缘紧贴a的下边缘 */
+  left: 0; /* 左对齐 */
+  width: 100%; /* 宽度与a的宽度相同 */
+  background-color: white; /* 背景色 */
+  border: 1px solid #ccc; /* 边框 */
+  padding: 10px; /* 内边距 */
+}
+
 /* 折叠菜单 */
 header .burger {
   display: none;
@@ -346,9 +386,9 @@ section {
 
 .showcases .case-item {
   /* 保持图片长宽比 */
-  width: 25vw;
+  width: 20vw;
   /* 这里没有写错，图片比例为25：20，也就是5：4 */
-  height: 20vw;
+  height: 16vw;
   overflow: hidden;
 }
 

@@ -16,19 +16,27 @@
 
     <title>江邻文创</title>
   </head>
-  <body>
+  <body>	  
     <!-- 头部 -->
     <header class="open">
       <div class="logo">江邻文创</div>
       <!-- 导航 -->
-      <nav>
-        <a href="#home">首页</a>
+      <nav >
+        <a class="btli" href="#home">首页
+			<ul class="droplist">
+				<li><a href="#">下拉项1</a></li>
+				<li><a href="#">下拉项2</a></li>
+				<li><a href="#">下拉项3</a></li>
+			</ul>
+		</a>
+
         <a href="#about-us">关于我们</a>
         <a href="#showcases">成功案例</a>
         <a href="#service">服务流程</a>
         <a href="#team-intro">团队介绍</a>
         <a href="#company-activities">公司动态</a>
         <i class="fas fa-search"></i>
+		
       </nav>
       <!-- 折叠导航按钮 -->
       <div class="burger">
@@ -153,63 +161,136 @@
       <!-- 成功案例 -->
       <!-- section-bg 区域灰色背景 -->
       <section id="showcases" class="showcases section-bg">
-        <h2 class="title1">成功案例</h2>
+        <h2 class="title1">产品展示</h2>
         <!-- 筛选按钮 -->
         <div class="filter-btns">
           <button class="filter-btn active" data-filter="*">
             全部
           </button>
           <!-- 指定要过滤的class selector，包括. -->
-          <button class="filter-btn" data-filter=".web">
-            WEB
+          <button class="filter-btn" data-filter=".metro">
+            地铁
           </button>
-          <button class="filter-btn" data-filter=".mobile">
-            移动
+          <button class="filter-btn" data-filter=".train">
+            高铁
           </button>
-          <button class="filter-btn" data-filter=".science">
-            科研
+          <button class="filter-btn" data-filter=".plane">
+            飞机
           </button>
         </div>
         <!-- 案例 -->
         <div class="cases">
           <!-- case-item样式类，web science为类别类 -->
-          <div class="case-item web science">
+          <div class="case-item metro train plane">
             <!-- 图片 -->
-            <img
-              src="images/jianglin-img/22.jpg"
-              alt=""
-            />
+            <img src="images/jianglin-product/case_customize.avif" alt="" />
           </div>
-          <div class="case-item web science">
-            <img src="images/jianglin-img/33.jpg" alt="" />
-          </div>
-          <div class="case-item web">
-            <img src="images/jianglin-img/44.jpg" alt="" />
-          </div>
-          <div class="case-item web">
-            <img
-              src="images/jianglin-img/55.jpg"
-              alt=""
-            />
-          </div>
-          <div class="case-item mobile">
-            <img
-              src="images/person-using-black-and-white-smartphone-and-holding-blue-230544.jpg"
-              alt=""
-            />
-          </div>
-          <div class="case-item science">
-            <img src="images/jianglin-img/66.jpg" alt="" />
-          </div>
-          <div class="case-item mobile web science">
-            <img src="images/jianglin-img/77.jpg" alt="" />
-          </div>
-          <div class="case-item mobile ">
-            <img
-              src="images/jianglin-img/88.jpg"
-              alt=""
-            />
-          </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/chengdu_metro_keyring.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/chongqing_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/chongqing_metro_case.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/chongqing_metro_keyring.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/chongqing_metro_keyring2.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/fuzhou_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/guiyang_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/hangzhou_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/jiaxing_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/metro_cardsticker.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/metro_case.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/metro_keyring_customize.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/metro_mousepad.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/nanjing_metro.webp" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/nanjing_metro.webp" alt="" />
+		  </div>
+		  <div class="case-item plane">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/plane_customize_case.webp" alt="" />
+		  </div>
+		  <div class="case-item plane">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/plane_keyring.avif" alt="" />
+		  </div>
+		  <div class="case-item plane">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/plane_mousepad.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/singapore_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro train plane">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/site_sticker.avif" alt="" />
+		  </div>
+		  <div class="case-item train">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/slow_train_sticker.avif" alt="" />
+		  </div>
+		  <div class="case-item train">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/street_plate_keyring.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/tianjin_metro.avif" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/tianjin_metro_site.avif" alt="" />
+		  </div>
+		  <div class="case-item train">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/train_penbag.webp" alt="" />
+		  </div>
+		  <div class="case-item metro">
+		    <!-- 图片 -->
+		    <img src="images/jianglin-product/xuzhou_metro.avif" alt="" />
+		  </div>
+		  
+
         </div>
       </section>
       <!-- 服务流程 -->
